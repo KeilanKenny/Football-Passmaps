@@ -1,0 +1,58 @@
+(function() {
+    var pixels = [];
+    var spot = document.body || document.head;
+
+    pixels = [];
+    pixels.push("https://ib.adnxs.com/getuid?https%3A%2F%2Fsync.springserve.com%2Fusersync%3Faid%3D1000001%26gdpr%3D1%26gdpr_consent%3D%26us_privacy%3D%26uuid%3D%24UID");
+    pixels.push("https://sync.bfmio.com/syncb?pid=111&gdpr=1&gdpr_consent=&us_privacy=");
+    pixels.push("https://pixel.advertising.com/ups/58185/sync?&gdpr=1&gdpr_consent=&us_privacy=&redir=true");
+    pixels.push("https://rtb.openx.net/sync/prebid?gdpr=1&gdpr_consent=&us_privacy=&r=https%3A%2F%2Fsync.springserve.com%2Fusersync%3Faid%3D1000008%26gdpr%3D1%26gdpr_consent%3D%26us_privacy%3D%26uuid%3D%24%7BUID%7D");
+    pixels.push("https://bh.contextweb.com/rtset?gdpr=1&gdpr_consent=&us_privacy=&pid=561910&ev=1&rurl=https%3A%2F%2Fsync.springserve.com%2Fusersync%3Faid%3D1000011%26gdpr%3D1%26gdpr_consent%3D%26us_privacy%3D%26uuid%3D%25%25VGUID%25%25");
+    pixels.push("https://sync.1rx.io/usersync2/rmphb?gdpr=1&gdpr_consent=&us_privacy=&redir=https%3A%2F%2Fsync.springserve.com%2Fusersync%3Faid%3D1000012%26gdpr%3D1%26gdpr_consent%3D%26us_privacy%3D%26uuid%3D%5BRX_UUID%5D");
+    pixels.push("https://sync.go.sonobi.com/us.gif?gdpr=1&gdpr_consent=&us_privacy=&loc=https%3A%2F%2Fsync.springserve.com%2Fusersync%3Faid%3D1000013%26gdpr%3D1%26gdpr_consent%3D%26us_privacy%3D%26uuid%3D%5BUID%5D");
+    pixels.push("https://sync.search.spotxchange.com/partner?gdpr=1&gdpr_consent=&us_privacy=&adv_id=8593&redir=https%3A%2F%2Fsync.springserve.com%2Fusersync%3Faid%3D1000014%26gdpr%3D1%26gdpr_consent%3D%26us_privacy%3D%26uuid%3D%24SPOTX_USER_ID");
+    pixels.push("https://pbs.publishers.tremorhub.com/pubsync?gdpr=1&gdpr_consent=&us_privacy=&redir=https%3A%2F%2Fsync.springserve.com%2Fusersync%3Faid%3D1000015%26gdpr%3D1%26gdpr_consent%3D%26us_privacy%3D%26uuid%3D%5Btvid%5D");
+    pixels.push("https://eb2.3lift.com/getuid?gdpr=1&cmp_cs=&us_privacy=&redir=https%3A%2F%2Fsync.springserve.com%2Fusersync%3Faid%3D1000016%26gdpr%3D1%26gdpr_consent%3D%26us_privacy%3D%26uuid%3D%24UID");
+    pixels.push("https://ads.yieldmo.com/pbsync?gdpr=1&gdpr_consent=&us_privacy=&redirectUri=https%3A%2F%2Fsync.springserve.com%2Fusersync%3Faid%3D1000017%26gdpr%3D1%26gdpr_consent%3D%26us_privacy%3D%26uuid%3D%24UID");
+    pixels.push("https://ssbsync.smartadserver.com/api/sync?callerId=52&gdpr=1&gdpr_consent=&us_privacy=&redirectUri=https%3A%2F%2Fsync.springserve.com%2Fusersync%3Faid%3D1000018%26gdpr%3D1%26gdpr_consent%3D%26us_privacy%3D%26uuid%3D%5Bssb_sync_pid%5D");
+    pixels.push("https://ups.analytics.yahoo.com/ups/58518/occ?gdpr=1&gdpr_consent=");
+    pixels.push("https://sync.sxp.smartclip.net/sync?type=red&dsp=116&gdpr_consent=");
+    pixels.push("https://match.sharethrough.com/universal/v1?supply_id=BGApXMcE");
+    pixels.push("https://x.bidswitch.net/sync?ssp=themediagrid&gdpr=1&gdpr_consent=&us_privacy=");
+    pixels.push("https://ih.adscale.de/su?gdpr=1&gdpr_consent=&tpid=22144&cburl=https%3A%2F%2Fsync.springserve.com%2Fusersync%3Faid%3D1000023%26gdpr%3D1%26gdpr_consent%3D%26us_privacy%3D%26uuid%3D__STROEER_USER_ID__");
+    pixels.push("https://sync.teads.tv/um?gdpr=1&gdpr_consent=&ssb_provider_id=1&uid&fb=https%3A%2F%2Fsync.springserve.com%2Fusersync%3Faid%3D1000024%26gdpr%3D1%26gdpr_consent%3D%26us_privacy%3D%26uuid%3D%5BVID%5D");
+    pixels.push("https://pixel.rubiconproject.com/exchange/sync.php?p=springserve_magnite_internal&gdpr=1&gdpr_consent=&us_privacy=");
+
+    for (x=0; x<pixels.length; x++) {
+        var oImg = document.createElement("img");
+        oImg.setAttribute('src', pixels[x]);
+        oImg.setAttribute('width', '1');
+        oImg.setAttribute('height', '1');
+        oImg.setAttribute('border', '0');
+        oImg.setAttribute('style', 'width:1px!important;height:1px!important;position:absolute!important;overflow:hidden!important;border-style:none!important;margin:0!important;padding:0!important;');
+        spot.appendChild(oImg);
+    }
+
+    pixels = [];
+    pixels.push("https://rtb.gumgum.com/usync/14048?gdpr=1&gdpr_consent=&us_privacy=&r=https%3A%2F%2Fsync.springserve.com%2Fusersync%3Faid%3D1000004%26gdpr%3D1%26gdpr_consent%3D%26us_privacy%3D%26uuid%3D");
+    pixels.push("https://ssum.casalemedia.com/usermatch?s=191709&gdpr=1&gdpr_consent=&us_privacy=&cb=https%3A%2F%2Fsync.springserve.com%2Fusersync%3Faid%3D1000005%26gdpr%3D1%26gdpr_consent%3D%26us_privacy%3D%26uuid%3D");
+    pixels.push("https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=1&gdpr_consent=&us_privacy=&predirect=https%3A%2F%2Fsync.springserve.com%2Fusersync%3Faid%3D1000010%26gdpr%3D1%26gdpr_consent%3D%26us_privacy%3D%26uuid%3D");
+
+    if (pixels.length > 0) {
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute('scrolling', 'no');
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('width', '1');
+        iframe.setAttribute('height', '1');
+        iframe.setAttribute('border', '0');
+        iframe.setAttribute('style', 'width:1px!important;height:1px!important;position:absolute!important;overflow:hidden!important;border-style:none!important;margin:0!important;padding:0!important;');
+        spot.appendChild(iframe);
+        var doc = (iframe.contentWindow || iframe.contentDocument);
+        if (doc.document) doc = doc.document;
+        doc.open();
+        for (x=0; x<pixels.length; x++) {
+            doc.write("<iframe src=\"" + pixels[x] + "\" scrolling=\"no\" frameborder=\"0\" width=\"1\" height=\"1\"></iframe>");
+        }
+        doc.close();
+    }
+})()
